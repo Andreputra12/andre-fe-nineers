@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <title>
-      Search | Welcome to nineers. a place where anything can be done
-    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Web Development</title>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <header>
       <div class="flex items-center justify-between px-20 py-5 bg-[#DFE8D3]">
         <div class="flex items-center gap-x-10">
@@ -224,7 +223,7 @@
 
           <!-- Dropdown menu -->
           <div
-            class="hidden absolute mt-2 bg-white rounded-lg shadow divide-y divide-gray-100 dark:bg-gray-700 dark:divide-gray-600"
+            class="hidden absolute z-50 bg-white mt-2 rounded-lg shadow divide-y divide-gray-100 dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
             style="top: 100%; left: -100%"
           >
@@ -320,110 +319,314 @@
       </div>
     </header>
 
-    <!-- MAIN SECTION -->
-    <main>
-      <section class="mb-18">
-        <nav
-          class="flex px-5 py-3 text-gray-700 pt-5 pl-10"
-          aria-label="Breadcrumb"
+    <main >
+      <!-- Hero Section -->
+      <section class="relative bg-gray-900 text-white">
+        <div
+          class="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row items-center"
         >
-          <ol
-            class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
-          >
-            <li class="inline-flex items-center">
-              <a
-                href="#"
-                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
-              >
-                <svg
-                  class="w-3 h-3 me-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
-                  />
-                </svg>
-                Home
-              </a>
-            </li>
-            <li>
-              <div class="flex items-center">
-                <svg
-                  class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-                <a
-                  href="#"
-                  class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
-                  >Search</a
-                >
-              </div>
-            </li>
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg
-                  class="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-                <span
-                  class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                  >Nineers</span
-                >
-              </div>
-            </li>
-          </ol>
-        </nav>
-
-        <h1 class="pl-10">Search Result For “Cyber Security”</h1>
+          <div class="w-full lg:w-1/2">
+            <h1 class="text-4xl font-bold mb-4">Programming & Tech</h1>
+            <p class="text-lg mb-6">
+              CourseID akan mengajarkan Anda sesuai skill yang Anda inginkan
+              secara lengkap dan praktis. Dengan metode mudah dipahami dan
+              latihan yang efektif.
+            </p>
+            <button
+              class="bg-zinc-500 text-white py-2 px-4 rounded hover:bg-zinc-600"
+            >
+              Explore More
+            </button>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <img
+              src="/assets/software dev img/web it.webp"
+              alt="Hero Image"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
       </section>
 
-      <section class="grid place-content-center bg-white px-5 pt-44">
-        <img
-          src="/assets/notfound.png"
-          alt="Not Found"
-          width="200"
-          height="200"
-          class="mx-auto"
-        />
-        <h1
-          class="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+      <!-- Web Development Section -->
+      <section class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Web Development</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          Uh-oh!
-        </h1>
+          <!-- Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/web dev img/gambar web 1.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will design UI/UX for mobile app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1570)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 490.000</p>
+            </div>
+          </div>
 
-        <p class="mt-4 text-gray-500 text-center">
-          Services Not Found Services for “Cyber ​​Security” not found, please
-          check your keywords or search for another category
-        </p>
+          <!-- Repeat Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/web dev img/gambar web 2.png"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will do attractive UI/UX design
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1200)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 190.000</p>
+            </div>
+          </div>
+
+          <!-- Additional Cards -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/web dev img/gambar web 3.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create a professional business website
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (410)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 100.000</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/web dev img/gambar web 4.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create an amazing website or app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (2207)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 500.000</p>
+            </div>
+          </div>
+      </section>
+      <!-- software Development Section -->
+      <section class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Software Development</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/software dev img/ecommerce 6.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will design UI/UX for mobile app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1570)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 150.000</p>
+            </div>
+          </div>
+
+          <!-- Repeat Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/software dev img/gambar web 5.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will do attractive UI/UX design
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1200)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 150.000</p>
+            </div>
+          </div>
+
+          <!-- Additional Cards -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/software dev img/web it.webp"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create a professional business website
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (410)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 250.000</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/software dev img/images.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create an amazing website or app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (2207)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 350.000</p>
+            </div>
+          </div>
+      </section>
+      <!-- Android Development Section -->
+      <section class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Android Development</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/andro img/andro 1.png"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will design UI/UX for mobile app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1570)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 150.000</p>
+            </div>
+          </div>
+
+          <!-- Repeat Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/andro img/andro 2.png"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will do attractive UI/UX design
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1200)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 150.000</p>
+            </div>
+          </div>
+
+          <!-- Additional Cards -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/andro img/andro 3.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create a professional business website
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (410)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 250.000</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/andro img/andro 4.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create an amazing website or app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (2207)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 350.000</p>
+            </div>
+          </div>
+      </section>
+      <!-- Graphic & Design Section -->
+      <section class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Graphic & Design</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/ui-ux img/ui 1.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will design UI/UX for mobile app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1570)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 150.000</p>
+            </div>
+          </div>
+
+          <!-- Repeat Card Item -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/ui-ux img/ui 2.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will do attractive UI/UX design
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 5.0 (1200)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 25.000</p>
+            </div>
+          </div>
+
+          <!-- Additional Cards -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/ui-ux img/ui 3.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create a professional business website
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (410)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 70.000</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="/assets/ui-ux img/ui 4.jpeg"
+              alt="Card Image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                I will create an amazing website or app
+              </h3>
+              <p class="text-sm text-gray-500 mb-2">⭐ 4.9 (2207)</p>
+              <p class="text-lg font-bold text-gray-800">Starting at Rp. 50.000</p>
+            </div>
+          </div>
       </section>
     </main>
 
-    <footer class="bg-gray-100 dark:bg-gray-900 mt-36">
+    <footer class="bg-gray-200 dark:bg-red-900 mt-36">
       <div class="mx-auto w-full">
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5">
           <div>
@@ -579,7 +782,7 @@
         </div>
 
         <div
-          class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t border-t-black-500"
+          class="px-4 py-6 bg-gray-200 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t border-t-black-500"
         >
           <span
             class="text-sm font-bold text-black-100 dark:text-black-300 sm:text-center"

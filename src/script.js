@@ -27,3 +27,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ==============================================================
+document.addEventListener("DOMContentLoaded", () => {
+  // Dropdown menu toggle
+  const userMenuButton = document.getElementById("user-menu-button");
+  const userDropdown = document.getElementById("user-dropdown");
+
+  // Event listener untuk membuka/menutup dropdown saat tombol diklik
+  userMenuButton.addEventListener("click", () => {
+    userDropdown.classList.toggle("hidden"); // Tampilkan/Sembunyikan dropdown
+  });
+
+  // Event listener untuk menutup dropdown jika klik di luar elemen dropdown
+  document.addEventListener("click", (event) => {
+    if (
+      !userMenuButton.contains(event.target) &&
+      !userDropdown.contains(event.target)
+    ) {
+      userDropdown.classList.add("hidden");
+    }
+  });
+});
